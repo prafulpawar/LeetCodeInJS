@@ -8,7 +8,7 @@ var strongPasswordCheckerII = function (password) {
     if (l < 8) {
         return false;
     }
-    let flag = true;
+   
     for (let i = 0; i < password.length; i++) {
 
         let ascii = password.charCodeAt(i);
@@ -41,7 +41,7 @@ var strongPasswordCheckerII = function (password) {
       else{
         return false;
       }
-      console.log(upperCount,lowerCount,specialCharCount,zeroCount)
+     
 };
 
 let x = strongPasswordCheckerII("ecuwcfoyajkolntovfniplayrxhzpmhrkhzonopcwxgupzhoupw!")
