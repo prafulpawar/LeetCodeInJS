@@ -1,6 +1,22 @@
 let prompt = require('prompt-sync')();
-let rows = Number(prompt('Row Size Is: '));
-let cols = Number(prompt('Col Size Is: '));
+
+
+let rows = Number(prompt('Row Size Is: ')); // Input number of rows
+let arr = new Array(rows); // Create outer array
+
+// Input column size and values for each row
+for (let i = 0; i < arr.length; i++) {
+    let col = Number(prompt(`Col Size for row ${i + 1} is: `)); // Input columns for each row
+    arr[i] = new Array(col); // Create inner array
+
+    // Input values for each element in the row
+    for (let j = 0; j < col; j++) {
+        arr[i][j] = Number(prompt(`Enter value for arr[${i}][${j}]: `)); // Input element
+    }
+}
+
+console.log('Jagged Array: ', arr); // Output the jagged array
+
 
 // let jaggedArray = [];
 
@@ -15,12 +31,3 @@ let cols = Number(prompt('Col Size Is: '));
 // }
 
 // console.log(jaggedArray);
-
-let arr = new Array(rows)
-
-for (let i = 0; i < arr.length; i++) {
-    let col = Number(prompt('Col Size Is: '));
-    arr[i] = new Array(col)
-}
-
-console.log(arr)
