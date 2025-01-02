@@ -11,7 +11,6 @@ for(let i=0;i<arr.length;i++){
     }
 }
 
-console.log(arr); // Prints the 2D array
 
 
 
