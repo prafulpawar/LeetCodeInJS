@@ -6,4 +6,9 @@ let arr = [
     [5,6,7],
     [9,7,2,7,6],
 ]
-console.log(arr)
+for(let i=0;i<arr.length;i++){
+    for(let j=0;j<arr[i].length;j++){
+        console.log(arr[i][j])
+    }
+    console.log('\n');
+}
