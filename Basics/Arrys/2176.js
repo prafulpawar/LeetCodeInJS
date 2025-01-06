@@ -5,6 +5,7 @@ var countPairs = function (nums, k) {
             if (nums[i] === nums[j]) {
                 if ((i * j) % k === 0) {
                     count++;
+                    
                 }
             }
         }
