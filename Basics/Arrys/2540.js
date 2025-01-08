@@ -11,7 +11,7 @@ function binarySearch(arr, target) {
         let mid = Math.floor((low + high) / 2); // Calculate mid
 
         if (arr[mid] === target) { 
-            return mid; // Target found
+            return arr[mid]; // Target found
         } else if (arr[mid] < target) {
             low = mid + 1; // Search in the right half
         } else {
@@ -23,15 +23,25 @@ function binarySearch(arr, target) {
 }
 
 var getCommon = function(nums1, nums2) {
+    let temp = Number.MAX_SAFE_INTEGER + 1;
      for(let i=0; i<nums1.length; i++) {
         let x=binarySearch(nums2,nums1[i]);
-        console.log(x)
+        if(x>0){
+            if(temp>nums1[i]){
+                temp = nums1[i];
+            }
+        }
      }
-
-    //  return temp;
+     if(temp === Number.MAX_SAFE_INTEGER + 1 ){
+        return -1;
+     }
+     else{
+        return temp;
+     }
+     
 };
 
-let nums1 = [1,2]
+let nums1 = [1,2,3]
 let nums2 = [2,4]
-// let ans = getCommon(nums1,nums2);
-// console.log(ans);
+let ans = getCommon(nums1,nums2);
+ console.log(ans);
