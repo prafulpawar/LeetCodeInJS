@@ -1,9 +1,3 @@
-2. Binary Tree BFS: 
-3. Topological Sort: 
-4. Binary Tree DFS: 
-6. Modified Binary 
-7. Subset: 
-
 1. Do not solve the problems that you know you can 
 2. Try learning topics pattern wise 
 3. Participate in Contest 
@@ -25,6 +19,9 @@
  Matrix Traversal
  Backtracking
  Dynamic Programming
+ Topological Sort
+ Binary Tree DFS
+ Subset 
 
 Prefix Sum
 303. Range Sum Query - Immutable
@@ -104,5 +101,3 @@ Dynamic Programming
 416. Partition Equal Subset Sum
 312. Burst Balloons
 1143. Longest Common Subsequence
-
-
