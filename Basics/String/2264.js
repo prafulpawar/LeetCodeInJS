@@ -39,6 +39,5 @@ var largestGoodInteger = function(num) {
 };
 
 let num = "014455"
-
 let x  = largestGoodInteger(num);
 console.log(x)
