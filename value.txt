@@ -1,0 +1,119 @@
+ARRAY
+
+Day 01
+
+   2206. Divide Array Into Equal Pairs
+   2341. Maximum Number of Pairs in Array
+   2176. Count Equal and Divisible Pairs in an Array  
+   2154. Keep Multiplying Found Values by Two  
+
+Day 02
+   2057. Smallest Index With Equal Value 
+   2169. Count Operations to Obtain Zero
+   2357. Make Array Zero by Subtracting Equal Amounts 
+   2210. Count Hills and Valleys in an Array
+
+Day 03
+   1979. Find Greatest Common Divisor of Array
+   1732. Find the Highest Altitude
+   2160. Minimum Sum of Four Digit Number After Splitting Digits
+   2164. Sort Even and Odd Indices Independently
+   
+Day 04
+   2293. Min Max Game - Array
+   2037. Minimum Number of Seat Everyone
+   2078. Two Furthest Houses With Different Colors
+   2315. Count Asterisks
+
+STRING
+
+Day 05
+
+   2278. Percentage of Letter in String
+   2124. Check if All A's Appears Before All B's  
+   2299. Strong Password Checker II
+   2399. Check distances Between same letters
+
+Day 06
+    
+   2309. Greatest English Letter in Upper and Lower Case
+   2287. Rearrange Characters to Make Target String 
+   2264. Largest 3-Same-Digit Number in String  
+   2259. Remove Digit From Number to Maximize Result
+
+Day 07
+
+   2283. Check if Number Has Equal Digit Count and Digit Value
+   2273. Find Resultant Array After Removing Anagrams    
+   2243. Calculate Digit Sum of a String
+   2068. Check Whether Two Strings are Almost Equivalent
+
+Day 08
+    
+   2042. Check if Numbers Are Ascending in a Sentence
+   2000. Reverse Prefix of Word
+   2404. Most Frequent Even Element
+   2325. Decode the Message 
+
+Day 09
+   575. Distribute Candies 
+   389. Find the Difference
+   2062. Count Vowel Substrings of a String
+   2053. Kth Distinct String in an Array
+
+Day 10
+   
+   290. Word Pattern
+   645. Set Mismatch 
+   804. Unique Morse Code Words
+   819. Most Common Word
+   
+2D ARRAY
+
+Day 11
+
+1572. Matrix Diagonal Sum
+867. Transpose Matrix
+832. Flipping an Image
+1886. Determine Whether Matrix Can Be Obtained By Rotation
+
+
+DAY 12
+ 
+2133. Check if Every Row and Column Contains All Numbers
+1893. Check if All the Integers in a Range Are Covered
+1854. Maximum Population Year
+48. Rotate Image
+
+
+BITWISE
+
+DAY 13
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Array 
+
+747. Largest Number At Least Twice of Others   
+1455. Check If a Word Occurs As a Prefix of Any Word in a Sentence   
+
+
+
+
+
+
+
+Test:
+Leetcode- 2154, 2057,2169,1979
