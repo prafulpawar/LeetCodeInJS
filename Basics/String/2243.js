@@ -4,7 +4,10 @@
  * @return {string}
  */
 var digitSum = function(s, k) {
-    
+     let arr=[];
+     for(let i=0;i<s.length;){
+        
+     }
 };
 
 let s = "11111222223", k = 3
