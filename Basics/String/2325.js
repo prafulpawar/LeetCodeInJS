@@ -25,17 +25,16 @@ var decodeMessage = function(key, message) {
     }
       
       const uniqueArr = [...new Set(arr)];
-    
-     console.log(uniqueArr)
-     console.log(arr2)
+      let result = {};
+
+      for (let i = 0; i < uniqueArr.length; i++) {
+          let key = String.fromCharCode(i + 97); 
+          result[key] = uniqueArr[i]; 
+          console.log(uniqueArr[i], ' ', key); 
+      }
+      
+      console.log(result);
      
-     for(let i=0;i<arr2.length;i++){
-         for(let j=0;j<uniqueArr.length;j++){
-             if(arr2[i]===uniqueArr[j]){
-                console.log(arr2[i] ,' ', String.fromCharCode(i+97),' ', uniqueArr[i]  )
-             }
-         }
-     }
 };
 
 
