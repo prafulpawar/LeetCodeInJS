@@ -4,13 +4,8 @@
  */
 
 
-function countFrequency(arr) {
-    const frequency = {};
-    for (let item of arr) {
-        frequency[item] = (frequency[item] || 0) + 1;
-    }
-    return frequency;
-}
+
+
 var mostFrequentEven = function (nums) {
     let newArr = [];
     for (let i = 0; i < nums.length; i++) {
@@ -23,15 +18,10 @@ var mostFrequentEven = function (nums) {
         return -1
     }
 
-    let obj =  countFrequency(newArr)
-    console.log(obj) 
-   
-   
     
-
 
 };
 
-let nums =[2,10000,10000,10000,2]
+let nums =[0,1,2,0,0,0,2,4,4,1]
 let x = mostFrequentEven(nums);
 console.log(x);
