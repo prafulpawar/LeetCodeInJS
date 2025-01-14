@@ -12,7 +12,6 @@ var distributeCandies = function(candyType) {
         let mincan=0
         min=candyType.length/2;
         mincan=set.size;
-
         if(min>mincan){
             return mincan
         }
