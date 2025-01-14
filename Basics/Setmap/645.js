@@ -11,7 +11,7 @@ function findMostOccurringNumber(arr) {
     let mostOccurringNumber = null;
     let maxCount = 0;
 
-    // Count occurrences
+    
     for (const num of arr) {
         countMap.set(num, (countMap.get(num) || 0) + 1);
 
