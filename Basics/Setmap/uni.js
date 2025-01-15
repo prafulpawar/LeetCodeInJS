@@ -10,6 +10,7 @@ for(let i=0;i<arr.length;i++){
 //     }
    
 // }
+
 //Another Way
 for(let a of map.keys()){
     if(map.get(a)===1){
