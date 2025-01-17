@@ -27,6 +27,34 @@ var wordPattern = function(pattern, s) {
     return true;
 };
 
+/**
+ * @param {string} pattern
+ * @param {string} s
+ * @return {boolean}
+ */
+var wordPattern = function(pattern, s) {
+    let com = s.split(' ')
+    let map = new Map();
+    if(com.length != pattern.length) return false;
+    
+    for(let i = 0; i < pattern.length; i++) {
+        if(!map.get(pattern[i]) && ![...map.values()].includes(com[i])) {
+            map.set(pattern[i], com[i])
+        } else {
+            if(map.get(pattern[i]) !== com[i]) return false;
+        }
+    }  
+    return true
+};
+
+
+
+
+
+
+
+
+
 let pattern = "abba", s = "dog cat cat dog"
 let x = wordPattern(pattern,s );
 console.log(x);
