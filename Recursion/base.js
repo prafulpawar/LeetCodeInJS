@@ -61,3 +61,26 @@ let prompt = require('prompt-sync')();
 // console.log("Sum is:", result); 
 
 
+// let size = Number(prompt('Size Is: '));
+// function abcd(n) {
+//   if (n === 0) {
+//     return 0; 
+//   }
+//       let c = n%10
+//     return c + abcd(Math.floor(n/10)); 
+// }
+
+// let result = abcd(size); 
+// console.log("Sum is:", result)
+//; 
+
+let size = Number(prompt('Size Is: '));
+function abcd(n) {
+  if (n === 1) {
+    return 1; 
+  }
+    return n * abcd(n-1); 
+}
+
+let result = abcd(size); 
+console.log("Sum is:", result); 
