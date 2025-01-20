@@ -36,12 +36,28 @@ let prompt = require('prompt-sync')();
 // abcd(size,1);
 
 
-let size = Number(prompt('Size Is: '));
-function abcd(n){
-    if(n===1){
-      return 
-    }
-     abcd(n=n-1)
-    console.log(n)
-}
-let x = abcd(size+1);
+
+// function abcd(n){
+//     if(n===1){
+//       return 
+//     }
+//      abcd(n=n-1)
+//     console.log(n)
+// }
+// let x = abcd(size+1);
+
+// sum of 1 to n digits
+
+// let size = Number(prompt('Size Is: '));
+
+// function abcd(n) {
+//   if (n === 1) {
+//     return 1; 
+//   }
+//   return n + abcd(n - 1); 
+// }
+
+// let result = abcd(size); 
+// console.log("Sum is:", result); 
+
+
