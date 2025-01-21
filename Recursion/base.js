@@ -76,7 +76,7 @@ let prompt = require('prompt-sync')();
 
 let size = Number(prompt('Size Is: '));
 function abcd(n) {
-  if (n === 1) {
+  if (n === 0) {
     return 1; 
   }
     return n * abcd(n-1); 
