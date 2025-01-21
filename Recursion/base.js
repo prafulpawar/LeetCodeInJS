@@ -24,7 +24,7 @@
 // let n = 10;
 // abcd(10);
 
-let prompt = require('prompt-sync')();
+//let prompt = require('prompt-sync')();
 // let size = Number(prompt('Size Is: '));
 // function abcd(n,k){
 //     if(k>=n+1){
@@ -74,13 +74,30 @@ let prompt = require('prompt-sync')();
 // console.log("Sum is:", result)
 //; 
 
-let size = Number(prompt('Size Is: '));
-function abcd(n) {
-  if (n === 0) {
-    return 1; 
-  }
-    return n * abcd(n-1); 
-}
+// let size = Number(prompt('Size Is: '));
+// function abcd(n) {
+//   if (n === 0) {
+//     return 1; 
+//   }
+//     return n * abcd(n-1); 
+// }
 
-let result = abcd(size); 
-console.log("Sum is:", result); 
+// let result = abcd(size); 
+// console.log("Sum is:", result); 
+
+
+// sum revrece a digit
+let prompt = require('prompt-sync')();
+let size = Number(prompt('Size Is: '));
+// function abcd(n,rev) {
+//   if (n === 0) {
+//     return rev; 
+//   } 
+//       let rem = n%10;
+//       rev = rev*10 + rem;
+       
+//    return  abcd(Math.floor(n/10),rev);
+// }
+// let rev =0;
+// let result = abcd(size,rev); 
+// console.log("Sum is:", result); 
