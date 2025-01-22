@@ -10,7 +10,7 @@ function gcd(a,b,c){
 
 }
 
-let a=210,b=3270;
+let a=10,b=20;
 let ans = Math.min(a,b);
 let x = gcd(a,b,ans)
 console.log(x)
