@@ -8,7 +8,7 @@ function gcd(a,k){
    return  gcd(a,k=k+1)
 }
 
-let a=100
+let a=24
 let k= 1
 let x = gcd(a,k)
 // // console.log(x)
@@ -22,8 +22,8 @@ let x = gcd(a,k)
     
 // }
 
-let p = Math.sqrt(x);
-for(let i=1;i<=p;i++){
+let p = Math.sqrt(a);
+for(let i=1;i<=Math.floor(p);i++){
     if(a%i===0){
         console.log(i)
     }
