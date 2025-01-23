@@ -1,16 +1,16 @@
-function gcd(a,k){
-   if(k>a){
-      return 1;
-   }
-   if(a%k===0){
-    //  console.log(k)
-   }
-   return  gcd(a,k=k+1)
-}
+// function gcd(a,k){
+//    if(k>a){
+//       return 1;
+//    }
+//    if(a%k===0){
+//     //  console.log(k)
+//    }
+//    return  gcd(a,k=k+1)
+// }
 
-let a=24
+let n=100
 let k= 1
-let x = gcd(a,k)
+// let x = gcd(n,k)
 // // console.log(x)
 //  factor(a,k)
 // function factor(n,i){
@@ -21,10 +21,18 @@ let x = gcd(a,k)
 //     factor(n, i + 1); 
     
 // }
+let i=0;
+//  i*i<=n
+//  Math.sqr(n) both are same
 
-let p = Math.sqrt(a);
-for(let i=1;i<=Math.floor(p);i++){
-    if(a%i===0){
+for(let i = 1; i*i<=n;i++){
+    if(n%i===0){
         console.log(i)
     }
+}
+for(;i>=1;i--){
+    if(n%i===0){
+        console.log(n/i)
+    }
+   
 }
