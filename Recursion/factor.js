@@ -25,11 +25,12 @@ let i=0;
 //  i*i<=n
 //  Math.sqr(n) both are same
 
-for(let i = 1; i*i<n;i++){
+for(i = 1; i*i<n;i++){
     if(n%i===0){
         console.log(i)
     }
 }
+if((i-n/i)==1) i--
 for(;i>=1;i--){
     if(n%i===0){
         console.log(n/i)
