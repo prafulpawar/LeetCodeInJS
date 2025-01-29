@@ -7,13 +7,13 @@ for (let i = 0; i < size; i++) {
 }
 
 var maxProfit = function(prices) {
-    let min = Infinity; // Initialize min with a very large value
-    let inmin = -1;     // Initialize index as -1 (invalid index)
+    let min = Infinity; 
+    let inmin = -1;     
     
     for (let i = 0; i < prices.length; i++) {
-        if (prices[i] > 0 && prices[i] < min) { // Ignore 0 values
-            min = prices[i]; // Update min if it's positive and smaller
-            inmin = i;       // Update index
+        if (prices[i] > 0 && prices[i] < min) { 
+            min = prices[i]; 
+            inmin = i;    
         }
     }
          let ans =0
