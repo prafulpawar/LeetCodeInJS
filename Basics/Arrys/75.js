@@ -3,36 +3,30 @@
  * @return {void} Do not return anything, modify nums in-place instead.
  */
 var sortColors = function(nums) {
-     let counttwo=0
-     let countone=0
-     let countzero=0
-
-     for(let i=0;i<nums.length;i++){
-          if(nums[i]===1){
-            countone++
-          }
-          else if(nums[i]===2){
-            counttwo++
-          }
-          else{
-            countzero++;
-          }
+  let i =0;
+  let j = 0
+  let k = nums.length-1
+  while(i<=k){
+     if(nums[i]==0){
+        swap(nums,i,j);
+        i++
+        j++
      }
-     console.log(countone,counttwo,countzero)
-
-    //  nums.length=0;
-     for(let i = 0 ;i<countzero;i++){
-        nums.push[i]=0;
+     else if(nums[i]===2){
+         swap(nums,i,k)
+         k--;
      }
+     else{
 
-     for(let i = countzero ;i<countone;i++){
-        nums.push[i]=1;
+         i++;
      }
-
-     for(let i = countone ;i<counttwo;i++){
-        nums.push[i]=2;
-     }
-   console.log(nums)  
+  }
 };
+
+function swap(nums,a,b){
+ let temp = nums[a];
+ nums[a] = nums[b]
+ nums[b] = temp
+}
 let nums = [2,0,2,1,1,0]
 sortColors(nums)
