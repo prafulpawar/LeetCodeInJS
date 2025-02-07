@@ -19,7 +19,7 @@ var pivotIndex = function(nums) {
         rightSum=nums[i]+rightSum
     }
 
-    console.log(rightSum,' ',leftSum, ' ', mid)
+    console.log(leftSum, ' ', rightSum ,' ', mid)
 };
 
 let nums = [2,1,-1]
