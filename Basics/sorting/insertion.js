@@ -18,7 +18,7 @@ function printArray(arr) {
     console.log(arr.join(" "));
 }
 
-let arr = [12, 11, 13, 5, 6];
+let arr = [7, 4, 3, 1, 5,9];
 
 insertionSort(arr);
 printArray(arr);
