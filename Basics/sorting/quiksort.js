@@ -4,6 +4,4 @@ quikeSort(arr,0,arr.length-1);
 
 function quikeSort (arr,first,last){
         let pivot = arr[last],i=first-1;
-        for(let j=first;la)
-
 }
