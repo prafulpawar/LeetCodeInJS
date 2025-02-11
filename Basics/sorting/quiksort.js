@@ -2,7 +2,7 @@ let arr  = [7,4,3,1,5,4,9];
 
 quickSort(arr, 0, arr.length - 1);
 
-console.log(arr); // Sorted array output
+console.log(arr);
 
 function quickSort(arr, first, last) {
     if (first < last) {
@@ -25,7 +25,7 @@ function partition(arr, first, last) {
     return i;
 }
 
-// Swap function to swap two elements in the array
+
 function swap(arr, i, j) {
     let temp = arr[i];
     arr[i] = arr[j];
