@@ -2,7 +2,7 @@ let arr  = [7,4,3,1,5,4,9];
 
 quickSort(arr, 0, arr.length - 1);
 
-console.log(arr);
+console.log(JSON.stringify(arr));
 
 function quickSort(arr, first, last) {
     if (first < last) {
