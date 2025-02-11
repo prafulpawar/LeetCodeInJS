@@ -6,6 +6,7 @@ while(i<arr.length){
       if(arr[i]!=arr[correctIndex]){
             
          let temp = arr[i];
+         
          arr[i] = arr[correctIndex];
          arr[correctIndex] = temp
       }
