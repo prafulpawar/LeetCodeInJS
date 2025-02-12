@@ -13,7 +13,16 @@ var findErrorNums = function(nums) {
         }
         else i++
     }
-   
+     let arr = []
+     console.log(nums)
+    for(let i=0;i<nums.length;i++){
+         
+         if(nums[i] !==i+1  ){
+            arr = [nums[i], i + 1];  
+            break;
+         }
+    }
+    return arr
 };
 
 let nums = [1,2,2,4]
