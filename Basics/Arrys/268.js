@@ -2,6 +2,7 @@
  * @param {number[]} nums
  * @return {number}
  */
+
 var missingNumber = function(nums) {
     let i =0
 while(i<nums.length){
@@ -19,5 +20,5 @@ for(let i =0;i<nums.length;i++){
             k=i
       }
 }
-console.log(k)
+return i
 };
