@@ -19,5 +19,5 @@ for(let i =0;i<nums.length;i++){
             k=i
       }
 }
-return k
+console.log(k)
 };
