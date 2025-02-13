@@ -23,19 +23,10 @@ let iterativeFunction = function (arr, x) {
 
 let arr = [1, 3, 5, 7, 8, 9];
 let x = 5;
-
-if (iterativeFunction(arr, x, 0, arr.length - 1)) {
-    console.log("Element found!");
+let p = iterativeFunction(arr,x);
+if(p===true){
+    console.log('found')
 }
-else {
-    console.log("Element not found!");
-}
-
-x = 8;
-
-if (iterativeFunction(arr, x, 0, arr.length - 1)) {
-    console.log("Element found!");
-}
-else {
-    console.log("Element not found!");
+else{
+    console.log('not found')
 }
