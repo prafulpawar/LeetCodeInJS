@@ -6,7 +6,7 @@
 
 
 var isPerfectSquare = function(num) {
-    let start = 0, end = (Math.floor(num/2))
+    let start = 0, end =num
     
     while (start <= end) {
  
@@ -16,11 +16,11 @@ var isPerfectSquare = function(num) {
         //  console.log(mid)
         if ((mid *mid) === num) {
             // console.log(mid)
-           return true
+           return [true,mid, num]
         }
 
      
-        else if (mid < num && mid*mid>num)
+        else if (mid < num && mid*mid<num)
             start = mid + 1;
         else
             end = mid - 1;
@@ -29,6 +29,10 @@ var isPerfectSquare = function(num) {
 
     return false;
 };
-let p = 25
-const x = isPerfectSquare(p)
-console.log(x)
+let p = 81
+for(let i=1;i<=900;i++){
+    const x = isPerfectSquare(i)
+    if(x !== false){
+        console.log(x)
+    }
+}
