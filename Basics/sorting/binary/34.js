@@ -47,8 +47,3 @@ var searchRange = function(nums, target) {
   return [first, last];
 };
 
-// Test cases
-console.log(searchRange([5,7,7,8,8,8,10], 7));  // Output: [1,2]
-console.log(searchRange([5,7,7,8,8,8,10], 8));  // Output: [3,5]
-console.log(searchRange([5,7,7,8,8,8,10], 6));  // Output: [-1,-1]
-console.log(searchRange([], 0));  // Output: [-1,-1]
