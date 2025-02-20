@@ -7,6 +7,8 @@ var longestPalindrome = function(s) {
     for (let char of s) {
         charCount.set(char, (charCount.get(char) || 0) + 1);
     }
+
+    console.log(charCount)
     
     let maxLength = 0;
     let hasOdd = false;
@@ -26,4 +28,3 @@ var longestPalindrome = function(s) {
 let  s = "abccccdd"
 let x  = longestPalindrome(s);
 console.log(x)
-
