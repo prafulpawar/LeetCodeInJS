@@ -17,6 +17,7 @@ var longestPalindrome = function(s) {
         if (count % 2 === 0) {
             maxLength += count;
         } else {
+            
             maxLength += count - 1;
             hasOdd = true;
         }
