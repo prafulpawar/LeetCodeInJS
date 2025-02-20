@@ -14,8 +14,6 @@ var subarraySum = function(nums, k) {
         let rem = sum - k;
 
         if (map.has(rem)) {
-            console.log(rem)
-            
             count += map.get(rem);
         }
 
