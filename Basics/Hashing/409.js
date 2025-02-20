@@ -4,12 +4,12 @@
  */
 var longestPalindrome = function(s) {
     let map = new Map();
-    let ans = [];
 
     for (let i = 0; i <s.length; i++) {
         map.set(s[i], (map.get(s[i]) || 0) + 1);
     }
-  console.log(map)
+    console.log(map)
+
 };
 
 let  s = "abccccdd"
