@@ -7,10 +7,12 @@ class Student{
      constructor(name,age){
         this.name = name;
         this.age  = age
-        console.log("Running Constructor")
+        console.log("Running Constructor",+' '+name+' '+age)
      }
 }
-const data  = new Student("ABCD",25);
+const data  = new Student("ABCD",35);
+const data1  = new Student("DSAX",75);
+const data2 = new Student("QWER",75);
+const data3  = new Student("ABCD",45);
 
-
-console.log(data)
+console.log(data,data1,data2,data3)
