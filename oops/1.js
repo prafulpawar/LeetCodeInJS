@@ -10,6 +10,7 @@ const data2  = new Student();
 data2.name   = "DSAQ"
 data2.age    = 49
 data2.email  = "DSAQ@gmail.com"
-
+// ab agar 50 objects banana ho toh mujhe aise hi banana padenga to iska solution honga kuch 
+// now ab role me aayenga constructor 
 console.log(data)
-console.log(data2)
+console.log(data2) 
