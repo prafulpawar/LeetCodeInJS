@@ -1,2 +1,7 @@
 object is a instance of a class && 
 class does not stored inside the memory
+basic example of class 
+class Student{
+
+}
+const vaibhav = new Student()
