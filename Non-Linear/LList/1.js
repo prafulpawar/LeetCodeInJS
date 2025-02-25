@@ -16,6 +16,7 @@ class LinkedList{
             return 
         }
         newNode.next = this.head
+        this.head = newNode
 
     }
 }
