@@ -1,185 +1,35 @@
-class Node {
-    constructor(val) {
-        this.val = val;
-        this.next = null;
-    }
-}
+/**
+ * Definition for singly-linked list.
+ * function ListNode(val, next) {
+ *     this.val = (val===undefined ? 0 : val)
+ *     this.next = (next===undefined ? null : next)
+ * }
+ */
+/**
+ * @param {ListNode} list1
+ * @param {ListNode} list2
+ * @return {ListNode}
+ */
+var mergeTwoLists = function(list1, list2) {
+    if (!list1) return list2;
+    if (!list2) return list1;
 
-class LinkedList {
-    constructor() {
-        this.head = null;
-    }
+    let dummy = new ListNode(-1); // Dummy node to simplify code
+    let current = dummy;
 
-    insertAtFirst(val) {
-        let newNode = new Node(val);
-        newNode.next = this.head;
-        this.head = newNode;
-    }
-
-    insertAtLast(val) {
-        let newNode = new Node(val);
-        if (this.head === null) {
-            this.head = newNode;
-            return;
+    while (list1 && list2) {
+        if (list1.val < list2.val) {
+            current.next = list1;
+            list1 = list1.next;
+        } else {
+            current.next = list2;
+            list2 = list2.next;
         }
-
-        let cur = this.head;
-        while (cur.next !== null) {
-            cur = cur.next;
-        }
-        cur.next = newNode;
+        current = current.next;
     }
 
-    insertAtPos(val, pos) {
-        if (pos < 0) {
-            console.log("Invalid position!");
-            return;
-        }
+    // Attach the remaining nodes from either list1 or list2
+    current.next = list1 || list2;
 
-        let newNode = new Node(val);
-
-        // Insert at the beginning
-        if (pos === 0) {
-            newNode.next = this.head;
-            this.head = newNode;
-            return;
-        }
-
-        let cur = this.head;
-        let prev = null;
-        let index = 0;
-
-        while (cur !== null && index < pos) {
-            prev = cur;
-            cur = cur.next;
-            index++;
-        }
-
-        // If position is greater than list length
-        if (index !== pos) {
-            console.log("Position out of range!");
-            return;
-        }
-
-        prev.next = newNode;
-        newNode.next = cur;
-    }
-
-    deleteAtFirst() {
-        if (this.head === null) {
-            console.log("List is already empty!");
-            return;
-        }
-        this.head = this.head.next;
-    }
-
-    deleteAtLast() {
-        if (this.head === null) {
-            console.log("List is already empty!");
-            return;
-        }
-        if (this.head.next === null) {
-            this.head = null;
-            return;
-        }
-
-        let cur = this.head;
-        while (cur.next.next !== null) {
-            cur = cur.next;
-        }
-        cur.next = null;
-    }
-
-    deleteAtPos(pos) {
-        if (this.head === null) {
-            console.log("List is empty!");
-            return;
-        }
-
-        if (pos < 0) {
-            console.log("Invalid position!");
-            return;
-        }
-
-        // Delete first node
-        if (pos === 0) {
-            this.head = this.head.next;
-            return;
-        }
-
-        let cur = this.head;
-        let prev = null;
-        let index = 0;
-
-        while (cur !== null && index < pos) {
-            prev = cur;
-            cur = cur.next;
-            index++;
-        }
-
-        // If position is greater than list length
-        if (cur === null) {
-            console.log("Position out of range!");
-            return;
-        }
-
-        prev.next = cur.next;
-    }
-
-    print() {
-        if (this.head === null) {
-            console.log("No Node Found!!!!!");
-            return;
-        }
-        let temp = this.head;
-        let ans = [];
-        while (temp !== null) {
-            ans.push(temp.val);
-            temp = temp.next;
-        }
-        console.log(ans.join(" -> "));
-    }
-}
-
-// Testing
-let obj = new LinkedList();
-
-obj.insertAtFirst(10);
-obj.insertAtFirst(20);
-obj.insertAtFirst(30);
-obj.insertAtFirst(40);
-obj.insertAtFirst(50);
-
-obj.insertAtLast(60);
-obj.insertAtLast(70);
-obj.insertAtLast(80);
-obj.insertAtLast(90);
-obj.insertAtLast(100);
-
-obj.print(); // 50 -> 40 -> 30 -> 20 -> 10 -> 60 -> 70 -> 80 -> 90 -> 100
-
-// Insert at position 3
-obj.insertAtPos(25, 3);
-obj.print(); // 50 -> 40 -> 30 -> 25 -> 20 -> 10 -> 60 -> 70 -> 80 -> 90 -> 100
-
-// Insert at beginning
-obj.insertAtPos(5, 0);
-obj.print(); // 5 -> 50 -> 40 -> 30 -> 25 -> 20 -> 10 -> 60 -> 70 -> 80 -> 90 -> 100
-
-// Insert at an invalid position
-obj.insertAtPos(200, 20); // Position out of range!
-
-// Delete at position 4
-obj.deleteAtPos(4);
-obj.print(); // 5 -> 50 -> 40 -> 30 -> 20 -> 10 -> 60 -> 70 -> 80 -> 90 -> 100
-
-// Delete at beginning
-obj.deleteAtPos(0);
-obj.print(); // 50 -> 40 -> 30 -> 20 -> 10 -> 60 -> 70 -> 80 -> 90 -> 100
-
-// Delete at last position
-obj.deleteAtPos(9);
-obj.print(); // 50 -> 40 -> 30 -> 20 -> 10 -> 60 -> 70 -> 80 -> 90
-
-// Delete at an invalid position
-obj.deleteAtPos(15); // Position out of range!
+    return dummy.next;
+};
