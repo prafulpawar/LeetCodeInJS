@@ -19,6 +19,9 @@ class LinkedList {
         newNode.next = this.head;
         this.head = newNode;
     }
+    insertAtLast(val){
+        
+    }
 
     print() {
         if (this.head === null) {
@@ -36,6 +39,7 @@ class LinkedList {
 }
 
 let obj = new LinkedList();
+
 obj.insertAtFirst(10);
 obj.insertAtFirst(20);
 obj.insertAtFirst(30);
