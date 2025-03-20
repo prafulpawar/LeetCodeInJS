@@ -7,8 +7,8 @@ class Node {
 
 class Stack {
     constructor() {
-        this.top = null;  // Top of the stack
-        this.size = 0;     // Number of elements in the stack
+        this.top = null;  
+        this.size = 0;    
     }
 
     // Push operation - Add an element to the stack
