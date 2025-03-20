@@ -1,22 +1,44 @@
-class Node {
-     constructor(val) {
-        this.val = this.val;
+class Node{
+    constructor(val){
+        this.val = val;
         this.next = null;
-     }
+    }
 }
 
-class LinkedList{
+class LinkedList {
     constructor(){
-        this.head = null
+        this.head = null;
     }
 
     insertAtFirst(val){
-         if(this.head === null){
-            console.log("Head Is Null")
-         }
+         let newNode = new Node(val); // ek node ban gayi
+         newNode.next = this.head;
+         this.head = newNode;
     }
+
+    insertAtLast(val){
+        let newNode = new Node(val) // ek new node banai hamane
+
+    }
+
+
+
+    print(){
+        let temp = this.head;
+        while(temp !== null){
+             console.log(temp.val)
+            temp = temp.next;
+        }
+    }
+
+
 }
 
-let obj = new LinkedList();
+const obj = new LinkedList();
 obj.insertAtFirst(10)
-console.log(obj)
+obj.insertAtFirst(20)
+obj.insertAtFirst(30)
+obj.print()
+console.log('-----------');
+
+
