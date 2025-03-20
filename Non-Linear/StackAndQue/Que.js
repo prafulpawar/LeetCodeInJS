@@ -6,4 +6,3 @@ class Queue{
      // works in fifo
      
 }
-
