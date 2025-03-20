@@ -1,14 +1,22 @@
-function node(data){
-    this.data = data;
-    this.next = null;
+class Node {
+     constructor(val) {
+        this.val = this.val;
+        this.next = null;
+     }
 }
 
-var head  = new node(5);
-var mid   = new node(10);
-var tail  = new node(13)
+class LinkedList{
+    constructor(){
+        this.head = null
+    }
 
-head.next = mid; // refernce to next node
-mid.next  = tail
+    insertAtFirst(val){
+         if(this.head === null){
+            console.log("Head Is Null")
+         }
+    }
+}
 
-
-console.log(head)
+let obj = new LinkedList();
+obj.insertAtFirst(10)
+console.log(obj)
