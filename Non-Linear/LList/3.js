@@ -110,6 +110,12 @@ class LinkedList {
             current = current.next;
         }
     }
+
+    revercePrint(){
+        
+    }
+
+
 }
 
 // Instance
