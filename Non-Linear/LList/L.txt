@@ -21,7 +21,7 @@ Modifying the LL But the number of Nodes will be same
 
 
 Reversing the Linked List
-https://leetcode.com/problems/reverse-linked-list/
+https://leetcode.com/problems/reverse-linked-list/ Done
 https://leetcode.com/problems/reverse-linked-list-ii/
 https://leetcode.com/problems/palindrome-linked-list/
 https://leetcode.com/problems/reverse-nodes-in-k-group/
@@ -81,3 +81,18 @@ https://leetcode.com/problems/lfu-cache
 https://leetcode.com/problems/design-a-text-editor
 
 linked list
+
+
+1290 DONE
+705
+706
+23 
+83 Attemping 
+82
+160
+203
+234
+237
+25
+19
+2
