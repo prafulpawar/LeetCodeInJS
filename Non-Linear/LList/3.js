@@ -1,4 +1,3 @@
-// This Is An Node Class
 class Node {
     constructor(data) {
         this.data = data;
@@ -10,9 +9,8 @@ class LinkedList {
     constructor() {
         this.head = null;
     }
-    // Adding To Top
 
-    addFrist(data) {
+    addFirst(data) {
         const newNode = new Node(data);
         newNode.next = this.head;
         this.head = newNode;
@@ -20,12 +18,12 @@ class LinkedList {
 
     addLast(data) {
         const newNode = new Node(data);
-        if (!head) {
+        if (!this.head) {
             this.head = newNode;
             return;
         }
         let current = this.head;
-        while (current.next != null) {
+        while (current.next !== null) {
             current = current.next;
         }
         current.next = newNode;
@@ -34,24 +32,22 @@ class LinkedList {
     size() {
         let count = 0;
         let current = this.head;
-        while (current.next != null) {
+        while (current !== null) {
             count++;
+            current = current.next;
         }
-
         return count;
     }
 
     addAt(index, data) {
-
         if (index < 0 || index > this.size()) {
-            console.error("InValid Index");
+            console.error("Invalid Index");
             return;
         }
 
         const newNode = new Node(data);
 
         if (index === 0) {
-            const newNode = new Node(data);
             newNode.next = this.head;
             this.head = newNode;
             return;
@@ -59,33 +55,37 @@ class LinkedList {
 
         let current = this.head;
         for (let i = 0; i < index - 1; i++) {
-            current = this.head;
+            current = current.next;
         }
         newNode.next = current.next;
-        current.next = newNode
+        current.next = newNode;
     }
-    removeTop(){
 
-        if(!this.head){
+    removeTop() {
+        if (!this.head) {
             return;
         }
-
         this.head = this.head.next;
     }
-    removeLast(){
-         if(!this.head){
+
+    removeLast() {
+        if (!this.head) {
             return;
-         }
-         let current = this.head;
-         while(current.next.next){
+        }
+        if (!this.head.next) {
+            this.head = null;
+            return;
+        }
+        let current = this.head;
+        while (current.next.next) {
             current = current.next;
-         }
-         current.next = null;
+        }
+        current.next = null;
     }
 
-    removeAt(index){
-        if (index < 0 || index > this.size()) {
-            console.error("InValid Index");
+    removeAt(index) {
+        if (index < 0 || index >= this.size()) {
+            console.error("Invalid Index");
             return;
         }
 
@@ -96,25 +96,29 @@ class LinkedList {
 
         let current = this.head;
         for (let i = 0; i < index - 1; i++) {
-            current = this.head;
+            current = current.next;
         }
-        if(current.next){
+        if (current.next) {
             current.next = current.next.next;
         }
     }
-   print(){
-      let current = this.head;
-       while(current){
-           console.log(current.data);
-           current = current.next
-       }
-   }
 
+    print() {
+        let current = this.head;
+        while (current) {
+            console.log(current.data);
+            current = current.next;
+        }
+    }
 }
 
 // Instance
 const linkedList = new LinkedList();
-linkedList.addFrist(5)
-linkedList.addFrist(3)
-linkedList.addFrist(2)
-linkedList.print()
+linkedList.addFirst(5);
+linkedList.addFirst(3);
+linkedList.addFirst(2);
+linkedList.addLast(5);
+linkedList.removeTop();
+linkedList.addAt(2,18);
+linkedList.removeLast();
+linkedList.print();
