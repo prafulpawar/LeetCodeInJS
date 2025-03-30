@@ -102,6 +102,19 @@ class LinkedList {
             current.next = current.next.next;
         }
     }
-
+   print(){
+      let current = this.head;
+       while(current){
+           console.log(current.data);
+           current = current.next
+       }
+   }
 
 }
+
+// Instance
+const linkedList = new LinkedList();
+linkedList.addFrist(5)
+linkedList.addFrist(3)
+linkedList.addFrist(2)
+linkedList.print()
