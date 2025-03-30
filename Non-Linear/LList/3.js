@@ -111,8 +111,11 @@ class LinkedList {
         }
     }
 
-    revercePrint(){
-        
+    revercePrint(head){
+         let temp = head;
+         while(temp!=null){
+              
+         }
     }
 
 
@@ -126,5 +129,4 @@ linkedList.addFirst(2);
 linkedList.addLast(5);
 linkedList.removeTop();
 linkedList.addAt(2,18);
-linkedList.removeLast();
-linkedList.print();
+linkedList.revercePrint();
