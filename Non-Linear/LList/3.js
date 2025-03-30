@@ -111,10 +111,11 @@ class LinkedList {
         }
     }
 
-    revercePrint(head){
-         let temp = head;
+    revercePrint(){
+         let temp = this.head;
          while(temp!=null){
-              
+             console.log(temp.data)
+              temp=temp.next;
          }
     }
 
