@@ -17,7 +17,7 @@ class Node {
       this.head = newNode;       // Update head to new node
     }
   
-    // Print the linked list
+    // Print  the linked list
     print() {
       let current = this.head;
       while (current) {
