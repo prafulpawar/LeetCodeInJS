@@ -87,8 +87,8 @@ linked list
 705
 706
 23 
-83 Attemping 
-82
+83 Attemping  Not DONE
+82 Attemping  DONE
 160
 203
 234
