@@ -87,11 +87,11 @@ linked list
 705
 706
 23 
-83 Attemping  Not DONE
-82 Attemping  DONE
+83  Attemping  Not DONE
+82  Attepted  DONE
 160
 203 Attepted Done
-234
+234 
 237
 25
 19
