@@ -1,11 +1,7 @@
-function pel(n){
-     if(n===0){
-        return 0;
-     }
-     let rev = n%10;
-     rev+pel(Math.floor(n=n/10));
-     return rev;
+function pel(n, rev = 0) {
+    if (n === 0) return rev;
+    rev = rev * 10 + (n % 10);
+    return pel(Math.floor(n / 10), rev);
 }
-let m  = 121;
-const ans = pel(m);
-// console.log(ans)
+
+console.log(pel(121)); // Output: 4321
