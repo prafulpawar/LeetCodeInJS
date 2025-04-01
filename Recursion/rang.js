@@ -3,10 +3,11 @@ function range(s,e){
         return [];
     }
     else {
-        
+         const numbers = range(s,e-1);
+         numbers.push(e)
+         return numbers;
     }
-    console.log('Hello',e)
-    range(s,e+1)
+   
 }
 
 console.log(range(0,5))
