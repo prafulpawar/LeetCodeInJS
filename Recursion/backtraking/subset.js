@@ -1,7 +1,6 @@
 function subsets(nums) {
     let result = [];
     let temp = [];
-
     function subSets(i) {
         if (i === nums.length) {
             result.push([...temp]);
@@ -14,7 +13,7 @@ function subsets(nums) {
 
         // Exclude the current element
         temp.pop();
-        subSets(i + 1);
+         subSets(i + 1);
     }
 
     subSets(0);
