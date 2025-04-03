@@ -6,7 +6,6 @@ class Node{
         this.rigth = null;
     }
 }
-
 class Tree{
     constructor(){
         this.root = null;
@@ -26,3 +25,5 @@ class Tree{
 
 let obj = new Tree();
 obj.createTree()
+
+// Tree Travelsal
