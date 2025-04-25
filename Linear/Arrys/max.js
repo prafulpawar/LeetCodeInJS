@@ -6,13 +6,21 @@ for(let i=0;i<arr.length;i++){
     }
 }
 
-console.log(max)
 
 // Second Max 
-// Approch It Shuld Be Less Then Great An Great Then 
-let m =arr[0];
-let s =0;
+// Approch It Shuld Be Less Then Great An Great Then  Its New Question
+let m =Math.max(arr[0],arr[1]);
+let s =Math.min(arr[0],arr[1]);
 
-for(let i=0;i<arr.length;i++){
-     if()
+
+for(let i=2;i<arr.length;i++){
+     if(arr[i]>m){
+           s=m;
+           m=arr[i]
+     }    
+     else{
+        s=arr[i]
+     } 
 }
+
+console.log(m ,s);
