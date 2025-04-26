@@ -8,5 +8,3 @@ if(w1.length!=w2.length){
 
 let freq1 = {};
 let freq2 = {};
-
-
