@@ -1,9 +1,10 @@
 
 // let a = [1, 2, 3, 1, 1, 1, 1];
 
-let a = [1,2,3]
+let a =  [1, 2, 3, 1, 1, 1, 1]
 let k = 3;
 let sum = 0;
+let max = 0;
     for(let i =0;i<a.length;i++){
         for(let j=i; j<a.length;j++){
               let arr = [];
@@ -12,7 +13,12 @@ let sum = 0;
                   arr.push(a[m]);
                   sum += a[m]
               }
-              console.log(arr,' ',sum)
+              if(sum===k){
+                  let x = arr.length;
+                   if(x>max){
+                       max=x;
+                   }
+              }
         }
-        
-    }
+}
+console.log(max)
