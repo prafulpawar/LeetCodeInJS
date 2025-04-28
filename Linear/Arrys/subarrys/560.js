@@ -17,3 +17,4 @@ var subarraySum = function(nums, k) {
     }
     return sum;
 };
+
