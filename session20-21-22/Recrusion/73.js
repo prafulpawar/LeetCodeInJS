@@ -1,5 +1,5 @@
 function recr(){
-     print('hello');
+     console.log('hello');
      recr();
 }
 recr()
