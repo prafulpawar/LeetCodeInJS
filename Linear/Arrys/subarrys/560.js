@@ -17,4 +17,18 @@ var subarraySum = function(nums, k) {
     }
     return sum;
 };
-
+let total = 0;
+for(let i =0;i<a.length;i++){
+    let arr = [];
+    let sum = 0;
+    for(let j=i; j<a.length;j++){
+          
+        arr.push(a[j]);
+        sum += a[j]
+         if(sum===k){
+            total++;
+         }
+          
+    }
+}
+total
