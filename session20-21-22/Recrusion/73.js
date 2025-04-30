@@ -1,5 +1,5 @@
-function recr(){
-     console.log('hello');
-     recr();
+function abcd () {
+     console.log('Hello')
+     abcd()
 }
-recr()
+abcd()
