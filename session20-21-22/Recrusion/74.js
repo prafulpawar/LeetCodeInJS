@@ -1,25 +1,19 @@
-function funcN (n) {
-    if(n==0){
-        return;
-    }
-    console.log(n)
-    funcN(n-1);
+function n (a) {
+   if(a===0){
+    return ;
+   }
+   console.log(a)
+   n(a-1);
 }
 
-
-// - - n
-function func (n) {
-    if(n==0){
+let a = 10;
+n(a)
+console.log('----')
+function c (a){
+     if(a===0){
         return ;
-    }
-    
-     func(n-1);
-    console.log(n)
-   
-    
+     }
+     c(a-1);
+     console.log(a)
 }
-
-let a = 5;
-func(a);
-let b = 10;
-funcN(b)
+c(a);
