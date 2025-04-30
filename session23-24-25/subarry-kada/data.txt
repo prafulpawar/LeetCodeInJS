@@ -1,0 +1,8 @@
+📈 Kadane's / Subarray Patterns
+Q87. / Q9. 53. Maximum Subarray (Kadane’s Algorithm)
+Q5. 121. Best Time to Buy and Sell Stock
+Q13. 493. Reverse Pairs
+
+Combine
+📊 Boyer-Moore / Count Frequency / Majority
+Q88. / Q10. 169. Majority Element (Boyer-Moore Voting Algorithm)
