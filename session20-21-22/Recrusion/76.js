@@ -1,11 +1,23 @@
-function fib (n) {
-    if(n<=1){
+//  nth Term Sum 
+function fib(n){
+
+    if(n===0 || n===1){
         return n;
     }
-    return fib(n-1)+fib(n-2);
+
+   return fib(n-1) + fib(n-2)
+    
 }
 
-let  data   = 10;
+let n = 11;
+let ans = fib(n);
 
-let ans = fib(data);
-console.log(ans)
+console.log(ans);
+
+//  Printing The Fib;
+
+function  fibT(n){
+    
+}
+
+//  Sum of Digit And Sum Of 

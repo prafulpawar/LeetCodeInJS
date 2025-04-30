@@ -1,12 +1,12 @@
-let a = 123;
+function sum(a,sums){
+      if(a<1){
+         return sums;
+      }
+      return sum(a=Math.floor(a/10),sums+1);
 
-function rev (n) {
-
-     if(n<0){
-        return 0;
-     }
-    rev()
 }
 
-let ans = rev(a);
+let a = 1234;
+let sums = 0;
+let ans = sum(a,sums);
 console.log(ans)

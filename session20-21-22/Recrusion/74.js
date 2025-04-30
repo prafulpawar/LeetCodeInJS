@@ -8,12 +8,14 @@ function n (a) {
 
 let a = 10;
 n(a)
+
 console.log('----')
+
 function c (a){
      if(a===0){
         return ;
      }
      c(a-1);
-     console.log(a)
+     console.log(a) // BackTracking
 }
 c(a);
